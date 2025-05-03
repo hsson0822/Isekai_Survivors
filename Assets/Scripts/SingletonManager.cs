@@ -17,7 +17,8 @@ public class SingletonManager<T> : MonoBehaviour where T  : MonoBehaviour
         }
         else
         {
-            DestroyImmediate(gameObject);
+            if(instance != this)
+                DestroyImmediate(gameObject);
         }
     }
 }

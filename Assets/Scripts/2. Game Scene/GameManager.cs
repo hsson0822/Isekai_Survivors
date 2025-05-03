@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using static Unity.VisualScripting.Member;
 
-public class GameManager : SingletonManager<GameManager>
+public class GameManager : MonoBehaviour
 {
     private bool isLoading;
     //private bool isPause;
